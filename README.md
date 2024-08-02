@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # daily_exercise
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# exercise
+>>>>>>> 9306032c05693301b0e428b91883c33a660a94bd
