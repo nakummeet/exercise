@@ -44,7 +44,7 @@ class _Day30State extends State<Day> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text('Congratulations!'),
-          content: Text('You have completed the 60-day challenge!'),
+          content: Text('You have completed the 30-day challenge!'),
           actions: <Widget>[
             TextButton(
               child: Text('OK'),
@@ -58,10 +58,6 @@ class _Day30State extends State<Day> {
       },
     );
   }
-
-
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -111,47 +107,43 @@ class _Day30State extends State<Day> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                      Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Day - ${index + 1}',
+                          style: TextStyle(
+                            fontSize: 24,
+                            color: Color(0xffbFDFF2),
+                          ),
+                        ),
+                        Row(
                           children: [
                             Text(
-                              'Day - ${index + 1}',
+                              'Exercises',
                               style: TextStyle(
-                                fontSize: 24,
+                                fontSize: 20,
                                 color: Color(0xffbFDFF2),
                               ),
                             ),
-                            Row(
-                              children: [
-                                Text(
-                                  'Exercises',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    color: Color(0xffbFDFF2),
-                                  ),
+                            SizedBox(width: 65,),
+                            if (isCompleted)
+                              Text(
+                                '✓Completed',
+                                style: TextStyle(
+                                  fontSize: 25,
+                                  color: Color(0xffbFDFF2),
                                 ),
-
-                                SizedBox(width: 65,),
-
-
-
-                                if (isCompleted)
-                                  Text(
-                                    '✓Completed',
-                                    style: TextStyle(
-                                      fontSize: 25,
-                                      color: Color(0xffbFDFF2),
-                                    ),
-                                  ),
-                              ],
-
-                            ),
+                              ),
                           ],
                         ),
-                        Icon(
-                          Icons.arrow_forward_ios,
-                          color: Color(0xffbFDFF2),
+                      ],
+                    ),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      color: Color(0xffbFDFF2
                         ),
+                    ),
                       ],
                     ),
                   ),

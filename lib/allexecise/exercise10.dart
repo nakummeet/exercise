@@ -1,4 +1,5 @@
 import 'package:daily_exercise/DAY/challengday.dart';
+import 'package:daily_exercise/allexecise/exercise.dart';
 import 'package:daily_exercise/allexecise/exercise9.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -142,10 +143,12 @@ class _exercise10State extends State<exercise10> {
                           tooltip: 'Next',
                           iconSize: 35,
                           onPressed: () {
-                            _showInterstitialAd(); // Show interstitial ad when button is pressed
+                            widget.onExerciseComplete();
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => ChallengeSelectionPage()),
+                              MaterialPageRoute(
+                                builder: (context) => ChallengeSelectionPage(),
+                              ),
                             );
                           },
                         ),
