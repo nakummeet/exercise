@@ -79,8 +79,8 @@ class HomeScreen extends StatelessWidget {
                       },
                       child: Container(
                         margin: EdgeInsets.only(top: 10, left: 10),
-                        height: 290,
-                        width: 400,
+                        height: 255,
+                        width: 340,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           border: Border.all(
@@ -88,7 +88,7 @@ class HomeScreen extends StatelessWidget {
                             width: 4, // border width
                           ),
                           image: DecorationImage(
-                            image: AssetImage('assets/image/30b.png'),
+                            image: AssetImage('assets/image/30 Day Challeneg 1.png'),
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -101,8 +101,8 @@ class HomeScreen extends StatelessWidget {
                       },
                       child: Container(
                         margin: EdgeInsets.only(top: 10, left: 20,right: 20),
-                        height: 300,
-                        width: 400,
+                        height: 255,
+                        width: 340,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           border: Border.all(
@@ -136,8 +136,8 @@ class HomeScreen extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   child: Container(
                     margin: EdgeInsets.only(top: 5, left: 10,),
-                    height: 280,
-                    width: 430,
+                    height: 250,
+                    width: 387,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
